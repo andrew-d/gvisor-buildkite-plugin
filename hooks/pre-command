@@ -1,6 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
+whoami || true
+id || true
+sudo id || true
+
 VERSION=${BUILDKITE_PLUGIN_GVISOR_VERSION:-'latest'}
 
 ARCH=$(uname -m)
