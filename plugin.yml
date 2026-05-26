@@ -1,0 +1,10 @@
+name: gVisor
+description: Installs gVisor, a container runtime sandbox, as a Docker runtime.
+author: Andrew Dunham
+requirements:
+  - bash
+  - wget
+configuration:
+  properties:
+    version:
+      type: string
